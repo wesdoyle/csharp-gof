@@ -1,4 +1,4 @@
-namespace abstract_factory
+namespace abstract_factory.Healers
 {
     internal class HealerFactory : PlayerFactory
     {

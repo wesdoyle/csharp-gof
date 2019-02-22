@@ -1,4 +1,6 @@
 ﻿using System;
+using abstract_factory.Archers;
+using abstract_factory.Healers;
 
 namespace abstract_factory
 {

@@ -1,6 +1,6 @@
 using System;
 
-namespace abstract_factory
+namespace abstract_factory.Archers
 {
     public class ElvenArcher : Elf
     {

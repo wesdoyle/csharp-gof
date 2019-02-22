@@ -1,6 +1,6 @@
 using System;
 
-namespace abstract_factory
+namespace abstract_factory.Healers
 {
     internal class ElfHealer : Elf
     {
