@@ -2,17 +2,17 @@
 
 namespace abstract_factory
 {
-    class Program
+    public static class Program
     {
-        static void Main()
+        public static void Main()
         {
-            PlayerFactory factory1 = new ArcherFactory();
-            Client client1 = new Client(factory1);
-            client1.Run();
+            PlayerFactory archerFactory = new ArcherFactory();
+            var archerClient = new Client(archerFactory);
+            archerClient.Run();
 
-            PlayerFactory factory2 = new HealerFactory();
-            Client client2 = new Client(factory2);
-            client2.Run();
+            PlayerFactory healerFactory = new HealerFactory();
+            var healerClient = new Client(healerFactory);
+            healerClient.Run();
 
             Console.ReadKey();
         }
