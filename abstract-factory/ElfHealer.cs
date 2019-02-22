@@ -10,7 +10,7 @@ namespace abstract_factory
 
         public override void Interact(Elf elf)
         {
-            Console.WriteLine($"{this.GetName()} gives elven bread to {elf.GetName()}");
+            Console.WriteLine($"{this.GetName()} magically heals {elf.GetName()}");
         }
 
         public override void Interact(Human human)

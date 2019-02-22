@@ -10,7 +10,7 @@ namespace abstract_factory
 
         public override void Interact(Elf elf)
         {
-            Console.WriteLine("An elf cannot fire another elf!");
+            Console.WriteLine("An elf cannot attack another elf!");
         }
 
         public override void Interact(Human human)
