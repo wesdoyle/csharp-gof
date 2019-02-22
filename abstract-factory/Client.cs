@@ -7,6 +7,7 @@ namespace abstract_factory
     /// </summary>
     internal class Client
     {
+        private readonly string _playerFactoryName;
         private readonly Human _priya; 
         private readonly Human _olaf; 
         private readonly Elf _beleg;
@@ -14,6 +15,7 @@ namespace abstract_factory
 
         public Client(PlayerFactory playerFactory)
         {
+            _playerFactoryName = playerFactory.GetType().Name;
             _priya = playerFactory.CreateHuman("Priya");
             _olaf = playerFactory.CreateHuman("Olaf");
             _beleg = playerFactory.CreateElf("Beleg");
@@ -22,12 +24,12 @@ namespace abstract_factory
 
         internal void Run()
         {
-            Console.WriteLine("-- Running Client --");
+            Console.WriteLine("\n");
+            Console.WriteLine($"-- Running Client for {this._playerFactoryName} --");
             _beleg.Interact(_olaf);
             _priya.Interact(_olaf);
             _olaf.Interact(_priya);
             _haldir.Interact(_beleg);
-            Console.WriteLine("\n");
         }
     }
 }
