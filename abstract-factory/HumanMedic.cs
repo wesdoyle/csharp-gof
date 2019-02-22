@@ -10,12 +10,12 @@ namespace abstract_factory
 
         public override void Interact(Human human)
         {
-            Console.WriteLine($"{this.GetName()} heals {human.GetName()}");
+            Console.WriteLine($"{this.GetName()} bandages {human.GetName()}");
         }
 
         public override void Interact(Elf elf)
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine($"{this.GetName()} gives potion to {elf.GetName()}");
         }
     }
 }

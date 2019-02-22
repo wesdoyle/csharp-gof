@@ -15,7 +15,7 @@ namespace abstract_factory
 
         public override void Interact(Human human)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{this.GetName()} fires an elven arrow at {human.GetName()}");
         }
     }
 }

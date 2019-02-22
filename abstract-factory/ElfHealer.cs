@@ -10,12 +10,12 @@ namespace abstract_factory
 
         public override void Interact(Elf elf)
         {
-            Console.WriteLine($"{this.GetName()} gives bread to {elf.GetName()}");
+            Console.WriteLine($"{this.GetName()} gives elven bread to {elf.GetName()}");
         }
 
         public override void Interact(Human human)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{this.GetName()} gives elven bread to {human.GetName()}");
         }
     }
 }

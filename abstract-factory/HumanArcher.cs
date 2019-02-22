@@ -15,7 +15,7 @@ namespace abstract_factory
 
         public override void Interact(Elf elf)
         {
-            Console.WriteLine($"{this.GetName()} fires an arrow at {elf.GetName()}!");
+            Console.WriteLine($"{this.GetName()} fires a silver arrow at {elf.GetName()}!");
         }
     }
 }
